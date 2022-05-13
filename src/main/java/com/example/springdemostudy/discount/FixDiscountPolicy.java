@@ -2,7 +2,9 @@ package com.example.springdemostudy.discount;
 
 import com.example.springdemostudy.member.Grade;
 import com.example.springdemostudy.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FixDiscountPolicy implements DiscountPolicy {
 
     private final int discountFixAmount = 1000;
@@ -14,6 +16,5 @@ public class FixDiscountPolicy implements DiscountPolicy {
         } else {
             return 0;
         }
-
     }
 }
